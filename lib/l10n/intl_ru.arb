@@ -1,4 +1,7 @@
 {
   "hello": "Привет",
-  "changelocale": "Смена языка"
+  "changelocale": "Смена языка",
+  "next": "Далее",
+  "agree": "Принять",
+  "pleaseChooseLanguage": "Пожалуйста выберите язык"
 }

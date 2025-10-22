@@ -1,4 +1,7 @@
 {
   "hello": "Hello",
-  "changelocale": "Changelocale"
+  "changelocale": "Changelocale",
+  "next": "Next",
+  "agree": "Agree",
+  "pleaseChooseLanguage": "Please choose language"
 }

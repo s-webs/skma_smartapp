@@ -1,4 +1,7 @@
 {
   "hello": "Сәлем",
-  "changelocale": "Тілді өзгерту"
+  "changelocale": "Тілді өзгерту",
+  "next": "Келесі",
+  "agree": "Қабылдау",
+  "pleaseChooseLanguage": "Тілді таңдаңыз"
 }

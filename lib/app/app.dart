@@ -5,6 +5,7 @@ import 'package:skma_smartapp/generated/l10n.dart';
 
 import 'router/app_router.dart';
 import 'localization/locale_provider.dart';
+import 'package:skma_smartapp/core/theme/app_theme.dart'; // << добавили
 
 class App extends ConsumerWidget {
   const App({super.key});
@@ -18,14 +19,18 @@ class App extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       routerConfig: router,
       locale: locale,
-      supportedLocales: S.delegate.supportedLocales,            // <— ТАК
+      supportedLocales: S.delegate.supportedLocales,
       localizationsDelegates: const [
-        S.delegate,                                            // <— И ЗДЕСЬ
+        S.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.indigo),
+
+      // ВАЖНО: используем нашу тему с BrandColors
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
+      themeMode: ThemeMode.system, // или из настроек пользователя
     );
   }
 }

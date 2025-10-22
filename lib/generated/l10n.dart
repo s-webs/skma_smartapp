@@ -68,6 +68,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Next`
+  String get next {
+    return Intl.message('Next', name: 'next', desc: '', args: []);
+  }
+
+  /// `Agree`
+  String get agree {
+    return Intl.message('Agree', name: 'agree', desc: '', args: []);
+  }
+
+  /// `Please choose language`
+  String get pleaseChooseLanguage {
+    return Intl.message(
+      'Please choose language',
+      name: 'pleaseChooseLanguage',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
