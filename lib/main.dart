@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+import 'bootstrap.dart';
+import 'app/app.dart';
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+Future<void> main() async {
+  // инициализация (Hive и т.п.)
+  final container = await bootstrap();
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  runApp(
+    // даём приложению уже подготовленный контейнер провайдеров
+    UncontrolledProviderScope(
+      container: container,
+      child: const App(),
+    ),
+  );
 }
