@@ -17,7 +17,6 @@ class ChooseLanguageStep extends ConsumerWidget {
     final locale = ref.watch(appLocaleProvider);
     final notifier = ref.read(appLocaleProvider.notifier);
 
-    // Берём локали и упорядочиваем: kk, ru, en
     final locales = S.delegate.supportedLocales;
     final order = const ['kk', 'ru', 'en'];
     final ordered = [
@@ -38,7 +37,6 @@ class ChooseLanguageStep extends ConsumerWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // Блок текста фиксированной высоты 100
           SizedBox(
             height: 100,
             child: Center(
@@ -53,10 +51,7 @@ class ChooseLanguageStep extends ConsumerWidget {
               ),
             ),
           ),
-
           const SizedBox(height: 24),
-
-          // Иконка (по макету выше)
           Center(
             child: Container(
               width: 120,
@@ -68,13 +63,7 @@ class ChooseLanguageStep extends ConsumerWidget {
               child: Icon(PhosphorIconsRegular.globe, size: 72, color: brand.main),
             ),
           ),
-
-          const SizedBox(height: 24),
-
-          // Этот Spacer займёт всё оставшееся место и прижмёт кнопки вниз
           const Spacer(),
-
-          // Кнопки выбора языка — прижаты к нижнему краю
           for (final l in ordered) ...[
             LanguageOptionButton(
               label: labelFor(l),
@@ -83,8 +72,6 @@ class ChooseLanguageStep extends ConsumerWidget {
             ),
             const SizedBox(height: 12),
           ],
-          // Можно добавить нижний отступ, если хочется чуть «воздуха» от края:
-          // const SizedBox(height: 8),
         ],
       ),
     );

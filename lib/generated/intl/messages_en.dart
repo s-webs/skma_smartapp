@@ -29,5 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "pleaseChooseLanguage": MessageLookupByLibrary.simpleMessage(
       "Please choose language",
     ),
+    "skmaUnifiedDigitalPlatform": MessageLookupByLibrary.simpleMessage(
+      "SKMA Unified Digital Platform",
+    ),
   };
 }

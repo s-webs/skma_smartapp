@@ -33,13 +33,13 @@ class _WelcomePageState extends State<WelcomePage> {
   String _buttonLabel() {
     switch (_index) {
       case 0:
-        return S.of(context).next; // выбор языка
+        return S.of(context).next;
       case 1:
-        return S.of(context).next; // презентация
+        return S.of(context).next;
       case 2:
-        return S.of(context).agree; // соглашение
+        return S.of(context).agree;
       default:
-        return S.of(context).next; // последний шаг
+        return S.of(context).next;
     }
   }
 

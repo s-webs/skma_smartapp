@@ -88,6 +88,16 @@ class S {
       args: [],
     );
   }
+
+  /// `SKMA Unified Digital Platform`
+  String get skmaUnifiedDigitalPlatform {
+    return Intl.message(
+      'SKMA Unified Digital Platform',
+      name: 'skmaUnifiedDigitalPlatform',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
