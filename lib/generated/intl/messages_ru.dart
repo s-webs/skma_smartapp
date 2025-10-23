@@ -32,5 +32,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "skmaUnifiedDigitalPlatform": MessageLookupByLibrary.simpleMessage(
       "Единая цифровая платформа ЮКМА",
     ),
+    "userAgreement": MessageLookupByLibrary.simpleMessage(
+      "Пользовательское соглашение",
+    ),
   };
 }

@@ -98,6 +98,16 @@ class S {
       args: [],
     );
   }
+
+  /// `User agreement`
+  String get userAgreement {
+    return Intl.message(
+      'User agreement',
+      name: 'userAgreement',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
