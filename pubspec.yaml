@@ -32,5 +32,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   generate: true
+  assets:
+    - assets/images/skma_smart_app_logo.png
+    - assets/images/unified_app_image.png
 flutter_intl:
   enabled: true

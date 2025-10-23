@@ -14,7 +14,7 @@ class AppLocaleNotifier extends Notifier<Locale> {
     _storage = ref.read(hiveStorageProvider);
 
     final saved = _storage.settingsBox.get(StorageKeys.locale) as String?;
-    final supported = S.delegate.supportedLocales;             // <— ТАК
+    final supported = S.delegate.supportedLocales;
 
     if (saved != null) {
       return supported.firstWhere(

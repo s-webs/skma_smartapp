@@ -9,7 +9,6 @@ class BrandButton extends StatelessWidget {
   final IconData? leadingIcon;
   final IconData? trailingIcon;
 
-  /// Кастомизация
   final bool fullWidth;
   final double height;
   final double radius;

@@ -5,5 +5,17 @@
   "agree": "Қабылдау",
   "pleaseChooseLanguage": "Тілді таңдаңыз",
   "skmaUnifiedDigitalPlatform": "ОҚМА цифрлық платформасы",
-  "userAgreement": "Пайдаланушы келісімі"
+  "userAgreement": "Пайдаланушы келісімі",
+  "login": "Кіру",
+  "register": "Тіркеу",
+  "recoverThePassword": "Құпия сөзді қалпына келтіріңіз",
+  "close": "Жабу",
+  "send": "Жіберу",
+  "email": "Электрондық пошта",
+  "password": "Құпия сөз",
+  "fullName": "Толық аты",
+  "repeatPassword": "Құпия сөзді қайталаңыз",
+  "chooseYourGender": "Жынысыңызды таңдаңыз",
+  "male": "Еркек",
+  "female": "Әйел"
 }

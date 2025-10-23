@@ -24,11 +24,27 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "agree": MessageLookupByLibrary.simpleMessage("Принять"),
     "changelocale": MessageLookupByLibrary.simpleMessage("Смена языка"),
+    "chooseYourGender": MessageLookupByLibrary.simpleMessage(
+      "Выберите ваш пол",
+    ),
+    "close": MessageLookupByLibrary.simpleMessage("Закрыть"),
+    "email": MessageLookupByLibrary.simpleMessage("Электронная почта"),
+    "female": MessageLookupByLibrary.simpleMessage("Женский"),
+    "fullName": MessageLookupByLibrary.simpleMessage("Полное имя"),
     "hello": MessageLookupByLibrary.simpleMessage("Привет"),
+    "login": MessageLookupByLibrary.simpleMessage("Войти"),
+    "male": MessageLookupByLibrary.simpleMessage("Мужской"),
     "next": MessageLookupByLibrary.simpleMessage("Далее"),
+    "password": MessageLookupByLibrary.simpleMessage("Пароль"),
     "pleaseChooseLanguage": MessageLookupByLibrary.simpleMessage(
       "Пожалуйста выберите язык",
     ),
+    "recoverThePassword": MessageLookupByLibrary.simpleMessage(
+      "Восстановить пароль",
+    ),
+    "register": MessageLookupByLibrary.simpleMessage("Регистрация"),
+    "repeatPassword": MessageLookupByLibrary.simpleMessage("Повторите пароль"),
+    "send": MessageLookupByLibrary.simpleMessage("Отправить"),
     "skmaUnifiedDigitalPlatform": MessageLookupByLibrary.simpleMessage(
       "Единая цифровая платформа ЮКМА",
     ),

@@ -5,5 +5,17 @@
   "agree": "Принять",
   "pleaseChooseLanguage": "Пожалуйста выберите язык",
   "skmaUnifiedDigitalPlatform": "Единая цифровая платформа ЮКМА",
-  "userAgreement": "Пользовательское соглашение"
+  "userAgreement": "Пользовательское соглашение",
+  "login": "Войти",
+  "register": "Регистрация",
+  "recoverThePassword": "Восстановить пароль",
+  "close": "Закрыть",
+  "send": "Отправить",
+  "email": "Электронная почта",
+  "password": "Пароль",
+  "fullName": "Полное имя",
+  "repeatPassword": "Повторите пароль",
+  "chooseYourGender": "Выберите ваш пол",
+  "male": "Мужской",
+  "female": "Женский"
 }

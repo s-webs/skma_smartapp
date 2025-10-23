@@ -24,11 +24,29 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "agree": MessageLookupByLibrary.simpleMessage("Қабылдау"),
     "changelocale": MessageLookupByLibrary.simpleMessage("Тілді өзгерту"),
+    "chooseYourGender": MessageLookupByLibrary.simpleMessage(
+      "Жынысыңызды таңдаңыз",
+    ),
+    "close": MessageLookupByLibrary.simpleMessage("Жабу"),
+    "email": MessageLookupByLibrary.simpleMessage("Электрондық пошта"),
+    "female": MessageLookupByLibrary.simpleMessage("Әйел"),
+    "fullName": MessageLookupByLibrary.simpleMessage("Толық аты"),
     "hello": MessageLookupByLibrary.simpleMessage("Сәлем"),
+    "login": MessageLookupByLibrary.simpleMessage("Кіру"),
+    "male": MessageLookupByLibrary.simpleMessage("Еркек"),
     "next": MessageLookupByLibrary.simpleMessage("Келесі"),
+    "password": MessageLookupByLibrary.simpleMessage("Құпия сөз"),
     "pleaseChooseLanguage": MessageLookupByLibrary.simpleMessage(
       "Тілді таңдаңыз",
     ),
+    "recoverThePassword": MessageLookupByLibrary.simpleMessage(
+      "Құпия сөзді қалпына келтіріңіз",
+    ),
+    "register": MessageLookupByLibrary.simpleMessage("Тіркеу"),
+    "repeatPassword": MessageLookupByLibrary.simpleMessage(
+      "Құпия сөзді қайталаңыз",
+    ),
+    "send": MessageLookupByLibrary.simpleMessage("Жіберу"),
     "skmaUnifiedDigitalPlatform": MessageLookupByLibrary.simpleMessage(
       "ОҚМА цифрлық платформасы",
     ),

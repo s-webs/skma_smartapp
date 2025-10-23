@@ -24,11 +24,27 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "agree": MessageLookupByLibrary.simpleMessage("Agree"),
     "changelocale": MessageLookupByLibrary.simpleMessage("Changelocale"),
+    "chooseYourGender": MessageLookupByLibrary.simpleMessage(
+      "Choose your gender",
+    ),
+    "close": MessageLookupByLibrary.simpleMessage("Close"),
+    "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "female": MessageLookupByLibrary.simpleMessage("Female"),
+    "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "hello": MessageLookupByLibrary.simpleMessage("Hello"),
+    "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "male": MessageLookupByLibrary.simpleMessage("Male"),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
+    "password": MessageLookupByLibrary.simpleMessage("Password"),
     "pleaseChooseLanguage": MessageLookupByLibrary.simpleMessage(
       "Please choose language",
     ),
+    "recoverThePassword": MessageLookupByLibrary.simpleMessage(
+      "Recover the password",
+    ),
+    "register": MessageLookupByLibrary.simpleMessage("Register"),
+    "repeatPassword": MessageLookupByLibrary.simpleMessage("Repeat password"),
+    "send": MessageLookupByLibrary.simpleMessage("Send"),
     "skmaUnifiedDigitalPlatform": MessageLookupByLibrary.simpleMessage(
       "SKMA Unified Digital Platform",
     ),

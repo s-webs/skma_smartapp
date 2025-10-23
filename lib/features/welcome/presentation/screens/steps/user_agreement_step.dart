@@ -31,11 +31,8 @@ class UserAgreementStep extends ConsumerWidget {
             ),
           ),
           const SizedBox(height: 24),
-
-          // === Блок пользовательского соглашения ===
           Expanded(
             child: Container(
-              // Тень + фон + скругление
               decoration: BoxDecoration(
                 color: theme.colorScheme.surface,
                 borderRadius: BorderRadius.circular(12),
@@ -47,16 +44,16 @@ class UserAgreementStep extends ConsumerWidget {
                   ),
                 ],
               ),
-              clipBehavior: Clip.antiAlias, // чтобы контент не выходил за рамки скругления
+              clipBehavior: Clip.antiAlias,
               child: Padding(
-                padding: const EdgeInsets.all(10), // внутренний отступ 10px
+                padding: const EdgeInsets.all(10),
                 child: Scrollbar(
                   thumbVisibility: true,
                   child: SingleChildScrollView(
                     physics: const BouncingScrollPhysics(),
                     child: Text(
-                      // Текст локализован (подставь правильный ключ)
-                      'lorem ipsum',
+                      // Текст соглашения
+                      '1.10. Политика конфиденциальности – документ, регулирующий цели, способы и порядок получения, обработки и хранения информации о Пользователе для предоставления доступа к Мобильному приложению, заключения настоящего Соглашения, а также для заключения и исполнения Договора аренды ТС. Политика конфиденциальности размещена в Мобильном приложении и на Интернет-сайте. 1.11. Регистрация Пользователя – совершение Пользователем и Компанией определенного в настоящем Соглашении набора действий, направленного на создание в Мобильном приложении Учетной записи Пользователя с целью его идентификации среди других Пользователей Мобильного приложения и получения Пользователем доступа к функционалу Мобильного приложения. Контент, вся информация о Пользователе, Учетной записи Пользователя, зарегистрированного в мобильном приложении «SKMA SmartApp», автоматически',
                       style: theme.textTheme.bodyMedium?.copyWith(
                         color: brand.textHeading,
                         height: 1.45,

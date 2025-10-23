@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:phosphor_flutter/phosphor_flutter.dart';
 import '../../widgets/presentation_widget.dart';
 import 'package:skma_smartapp/core/theme/brand_colors.dart';
 import 'package:skma_smartapp/generated/l10n.dart';
@@ -33,14 +32,9 @@ class PresentationStep extends ConsumerWidget {
               ),
             ),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 50),
           // Блок видео (16:9, закруглённые углы)
-          const Expanded(
-            child: PresentationVideoWidget(
-              borderRadius: 15,
-              autoReplay: true,
-            ),
-          ),
+          Image.asset('assets/images/unified_app_image.png', width: 245),
         ],
       ),
     );

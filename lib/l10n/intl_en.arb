@@ -5,5 +5,17 @@
   "agree": "Agree",
   "pleaseChooseLanguage": "Please choose language",
   "skmaUnifiedDigitalPlatform": "SKMA Unified Digital Platform",
-  "userAgreement": "User agreement"
+  "userAgreement": "User agreement",
+  "login": "Login",
+  "register": "Register",
+  "recoverThePassword": "Recover the password",
+  "close": "Close",
+  "send": "Send",
+  "email": "Email",
+  "password": "Password",
+  "fullName": "Full Name",
+  "repeatPassword": "Repeat password",
+  "chooseYourGender": "Choose your gender",
+  "male": "Male",
+  "female": "Female"
 }
