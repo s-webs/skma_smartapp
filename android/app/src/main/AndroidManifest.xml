@@ -3,9 +3,6 @@
     <!-- Интернет для сетевых запросов/видео -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
-    <!-- (опционально) Если где-то проверяешь сеть через Connectivity -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
     <application
         android:label="skma_smartapp"
         android:name="${applicationName}"

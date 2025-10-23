@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import '../../widgets/presentation_widget.dart';
 import 'package:skma_smartapp/core/theme/brand_colors.dart';
 import 'package:skma_smartapp/generated/l10n.dart';
 
