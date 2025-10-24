@@ -3,8 +3,9 @@ import 'package:skma_smartapp/core/theme/brand_colors.dart';
 
 import 'basic_top_bar.dart';
 import 'basic_bottom_bar.dart';
+import 'app_sidebar.dart';
 
-class BasicLayout extends StatelessWidget {
+class BasicLayout extends StatefulWidget {
   const BasicLayout({
     super.key,
     required this.body,
@@ -31,12 +32,35 @@ class BasicLayout extends StatelessWidget {
   final ImageProvider? avatar;
 
   @override
+  State<BasicLayout> createState() => _BasicLayoutState();
+}
+
+class _BasicLayoutState extends State<BasicLayout> {
+  final _scaffoldKey = GlobalKey<ScaffoldState>();
+
+  void _openDrawer() {
+    _scaffoldKey.currentState?.openDrawer();
+  }
+
+  void _handleMenuPressed() {
+    // Сначала даём шанс внешнему обработчику (если он есть),
+    // затем гарантированно открываем Drawer.
+    widget.onMenuPressed?.call();
+    _openDrawer();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final brand = theme.extension<BrandColors>();
     final main = brand?.main ?? const Color(0xFF7A34F4);
 
     return Scaffold(
+      key: _scaffoldKey,
+      drawerEnableOpenDragGesture: false,
+      drawer: AppSidebar(
+        onClose: () => Navigator.of(context).pop(),
+      ),
       extendBody: true,
       body: Container(
         decoration: BoxDecoration(
@@ -55,9 +79,8 @@ class BasicLayout extends StatelessWidget {
             children: [
               Positioned.fill(
                 child: Padding(
-                  // отступы под верх/низ панели
                   padding: const EdgeInsets.fromLTRB(16, 72, 16, 120),
-                  child: body,
+                  child: widget.body,
                 ),
               ),
               Positioned(
@@ -66,10 +89,10 @@ class BasicLayout extends StatelessWidget {
                 top: 10,
                 child: BasicTopBar(
                   color: main,
-                  notifications: notifications,
-                  onMenuPressed: onMenuPressed,
-                  onNotificationsPressed: onNotificationsPressed,
-                  onSettingsPressed: onSettingsPressed,
+                  notifications: widget.notifications,
+                  onMenuPressed: _handleMenuPressed,
+                  onNotificationsPressed: widget.onNotificationsPressed,
+                  onSettingsPressed: widget.onSettingsPressed,
                 ),
               ),
               Positioned(
@@ -78,10 +101,10 @@ class BasicLayout extends StatelessWidget {
                 bottom: 0,
                 child: BasicBottomBar(
                   color: main,
-                  selected: currentIndex,
-                  onTap: onTabSelected,
-                  onAvatarPressed: onAvatarPressed,
-                  avatar: avatar,
+                  selected: widget.currentIndex,
+                  onTap: widget.onTabSelected,
+                  onAvatarPressed: widget.onAvatarPressed,
+                  avatar: widget.avatar,
                 ),
               ),
             ],

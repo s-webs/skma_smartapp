@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
-
 import 'notification_badge.dart';
 
 class BasicTopBar extends StatelessWidget {
@@ -46,8 +45,6 @@ class BasicTopBar extends StatelessWidget {
                 color: Colors.white,
                 splashRadius: 22,
               ),
-              if (notifications > 0)
-                const SizedBox.shrink(),
               if (notifications > 0)
                 Positioned(
                   right: 2,
